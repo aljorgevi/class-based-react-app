@@ -1,20 +1,19 @@
-import { Component } from 'react';
-import Button from "./Button"
-
+import { Component } from "react";
+import Button from "./Button";
 
 const styles = {
   producto: {
-    border: 'solid 1px #ccc',
-      boxShadow: '0 5px 5px rgb(0,0,0,0.1)',
-      width: "30%",
-      padding: "15px 10px",
-      borderRadius: "5px"
+    border: "solid 1px #ccc",
+    boxShadow: "0 5px 5px rgb(0,0,0,0.1)",
+    width: "30%",
+    padding: "15px 10px",
+    borderRadius: "5px",
   },
   img: {
-      width: "100%",
-      display: "block",
-      objectFit: "cover"
-  }
+    width: "100%",
+    display: "block",
+    objectFit: "cover",
+  },
 };
 
 class Producto extends Component {
@@ -27,7 +26,7 @@ class Producto extends Component {
         <h3>{producto.nombre}</h3>
         <p>{producto.price}</p>
         <Button onClick={() => agregarAlCarro(producto)}>
-            Agregar al carro
+          Agregar al carro
         </Button>
       </div>
     );

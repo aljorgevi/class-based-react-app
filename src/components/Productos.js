@@ -1,12 +1,12 @@
-import { Component } from 'react';
-import Producto from './Producto';
+import { Component } from "react";
+import Producto from "./Producto";
 
 const styles = {
   productos: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
   },
 };
 
