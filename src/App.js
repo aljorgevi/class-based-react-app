@@ -12,9 +12,7 @@ class App extends Component {
       { nombre: "Arbejas", price: 2500, img: "/productos/arbejas.jpg" },
       { nombre: "Lechuga", price: 500, img: "/productos/lechuga.jpg" },
     ],
-    carro: [
-      // { nombre: "Tomate", price: 1500, img: "/productos/tomate.jpg", cantidad: 1 },
-    ],
+    carro: [],
   };
 
   agregarAlCarro = (producto) => {
@@ -38,7 +36,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar carro={this.state.carro} />
         <Layout>
           <Title />
           <Productos
