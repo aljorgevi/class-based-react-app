@@ -18,6 +18,15 @@ class App extends Component {
   };
 
   agregarAlCarro = (producto) => {
+    const { carro } = this.state;
+
+    if (carro.find((p) => p.nombre === producto.nombre)) {
+      const newCarro = carro.map((p) =>
+        p.nombre === producto.nombre ? { ...p, cantidad: p.cantidad + 1 } : p
+      );
+      return this.setState({ carro: newCarro });
+    }
+
     return this.setState({
       carro: this.state.carro.concat({
         ...producto,
@@ -27,7 +36,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.carro);
     return (
       <div>
         <Navbar />
