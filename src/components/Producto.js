@@ -18,7 +18,6 @@ const styles = {
 
 class Producto extends Component {
   render() {
-    console.log(this.props);
     const { producto, agregarAlCarro } = this.props;
     return (
       <div style={styles.producto}>

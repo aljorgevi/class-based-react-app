@@ -13,7 +13,6 @@ const styles = {
 class Productos extends Component {
   render() {
     const { items, agregarAlCarro } = this.props;
-    console.log(items);
 
     return (
       <div style={styles.productos}>
