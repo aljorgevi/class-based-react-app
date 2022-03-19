@@ -1,3 +1,5 @@
+Basic app (e-commerce with a basket) to practice a bit about class based components
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
