@@ -34,6 +34,8 @@ class App extends Component {
     });
   };
 
+  //
+
   mostrarCarro = () => {
     if (!this.state.carro.length) return;
 
